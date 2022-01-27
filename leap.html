@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title></head>
+<body>
+    <input type="number" id="leap">
+    <button  type="button" onclick="raj()">submit</button>
+   <p id="year"></p>
+
+<script>
+    function raj(){
+
+         var X=parseInt(document.getElementById("leap").value);
+         
+         document.getElementById("year").innerHTML;
+         if ((0 == X % 4) && (0 != X % 100) || (0 == X % 400))  {
+             alert("Is a Leap Year");
+         }
+        else{
+            alert("Is not a Leap Year");
+        }
+    }
+</script>
+</body>
+</html>

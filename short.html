@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // let x=[1,3,4,6,5,8,7,9,5,7,4,6,4,4,5,1]
+        // x.sort();
+
+        // var count=0;
+        // for(let  i=0; i<x.length;i++) 
+
+        // if(x[i])
+
+
+
+//      let x= ["rajesh", "satya"," surya", "hemanth ", "kumar", "siva", "sunny", "vara", "prasad"]
+
+//        let temp;
+//        for(let i=0; i<x.length-1;i++){
+
+//            for(let j=i+1;j<x.length;j++) {
+
+//            if (x[i]>x[j]){
+
+//                temp=x[i];
+               
+//                X[i]=x[j];
+               
+
+//                x[j]=temp;
+               
+//            }
+
+//         }
+//     }  
+// console.log(x);
+
+
+
+let x=['rajesh','surya','siva','durga','vara','bunny','mani','hemanth','sunny','prasad']
+        let y;
+        for(let i=0;i<x.length-1;i++){
+            for(let j=i+1;j<x.length;j++){
+            if (x[i]>x[j]){
+                y=x[i];
+                // console.log("temp",temp);
+                x[i]=x[j];
+                // console.log("x[i]",x[i]);
+                x[j]=y;
+                // console.log(x[i],x[j]);
+            }
+        }
+       
+    }
+   console.log(x)
+
+    </script>
+</body>
+</html>

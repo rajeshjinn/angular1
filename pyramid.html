@@ -1,0 +1,43 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+  
+     <table>
+      <tr>
+        <td>Enter a number</td>
+        <td><input type="text" id="no" class="nomor" name="number"></td>
+      </tr>
+       <tr><td></td><td><input type=submit value="submit" id="pattern" onclick="Pyramid(document.getElementById('no').value);Pyramiddn(document.getElementById('no').value);"></td></tr>
+
+       <script>
+
+       function Pyramid(number)
+
+       {
+         document.write("<bottom>"); 
+ 
+         if(number>0)     
+          {
+            Pyramid(number-1);  
+            for(j=1;j<=number;j++)  
+            {
+              document.write(" "+j);
+            }
+
+            for(k=number-1;k>0;k--)   
+            {
+              document.write(" "+k);
+            }
+
+          } 
+          document.write("<br>");
+
+        
+       } 
+      
+
+    </script>
+  </body>
+</html>

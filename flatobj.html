@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+     let  notes = [{
+   title: 'abdkak',
+   id: 1
+}, {
+   title: 'jdjdj  kisj,  oks',
+   id: 2
+}, {
+   title: 'kdkakaos',
+   id: 3
+}, {
+   title: '1234 566 884',
+   id: 4
+}, {
+   title: 'knxkdddps',
+   id: 5
+}, {
+   title: 'qwerty,asdf',
+   id: 6
+}, ];
+        let returnFlattenObject = (arr) => {
+     let flatObject = {};
+   for(let i=0; i<arr.length; i++){
+      for(const property in arr[i]){
+         flatObject[`${property}_${i}`] = arr[i][property];
+      }
+   };
+   return flatObject;
+}
+console.log(returnFlattenObject(notes));
+    </script>
+</body>
+</html>

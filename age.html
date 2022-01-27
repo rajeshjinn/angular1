@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function verify()
+    {
+
+        if(document.getElementById("num").value>=18)
+        {
+            document.getElementById("click").innerHTML="eligible for vote";
+        }
+        else{
+            document.getElementById("click").innerHTML=  "not elegible";
+        }
+    }
+</script>
+<body>
+    <h1  >ENTER YOUR AGE  <input type="number" id="num"></h1>
+    <button onclick="verify()">verify</button>
+    <br>
+    <br>
+    <div id="click"></div>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="LOAN AMOUNT" id="amount"> 
+
+    <br>
+
+    <input type="text" placeholder="Interest rate" id="int">
+
+    <br>
+
+    <input type="text" placeholder="tenure" id="ten">
+
+    <br>  <br>
+
+    <button onclick="interestamount()">interest amount</button>
+    <br>
+    <br>
+    <br>
+
+    <div id="month"></div>
+
+    <br>
+
+    <div id="fine"></div>
+
+    <br>
+
+    <div id="total"></div>
+
+    <script>
+
+        
+
+        
+
+        function interestamount(){
+        var x= parseInt(document.getElementById("amount").value);
+        var y= parseInt(document.getElementById("int").value);
+        var z= parseInt(document.getElementById("ten").value);
+
+     if (x>0) {
+
+        //  alert("amount only in positive")
+
+        var a=((x*y*z)/12)/100;
+
+        var b=(a+x)/z;
+
+
+        // console.log(b);
+
+        document.getElementById("month").innerHTML=(b)
+
+        document.getElementById("fine").innerHTML=(a)
+
+        document.getElementById("total").innerHTML=(a+x)
+
+        // console.log(a);
+
+        // console.log(a+x);
+     }
+      
+    }
+     </script>
+</body>
+</html>

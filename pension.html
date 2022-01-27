@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        
+   <P> NAME :- <input type="text" id="NAME"></P>
+   <p > AGE :- <input type="number" name="" id="age"></P>
+
+   <p>GENDER :- 
+    <input type="radio" name="choice" value="MALE" id="MALE"> 
+    <label for="choice-MALE">MALE </label>
+    <input type="radio" name="choice" value="FEMALE" id="FEMALE">
+    <label for="choice-FEMALE">FEMALE </label>
+    
+        <input type="radio" name="choice" value="OTHERS" id="OTHERS"> 
+        <label for="">OTHERS</label>
+        
+    
+  </P>
+  <label for="cars">SELECT CATEGORY:</label>
+  <select name="" id="CATEGORY" enable>
+    <option value="senior citizen">senior citizen</option>
+    <option value="widow"> widow</option>
+    <option value="phd">PH</option>
+    
+  </select>
+  <br><br>
+  <button onclick="submit()">submit</button>
+
+  <script>
+      function submit()  {
+      var a=document.getElementById("age").value;
+
+      if(typeof(a)!=String){
+          if(a>0){
+              if(a>=5 && 125 > a){
+                  alert("your are eligible");
+
+              }
+              else{
+                  alert("not eligible");
+              }
+
+          }
+      }
+      
+    }
+
+  </script>
+
+
+  
+
+  
+
+</body>
+</html>
